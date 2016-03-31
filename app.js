@@ -15,7 +15,14 @@ $(document).ready(function() {
   $('#reset').on('click', function() {
     boxes.removeClass(colors);
   })
+/////////////FIX THIS.  BROKEN/////////
+  boxes.mousedown(function() {
+    $(this).addClass(color);
+  }).mouseup(function() {
 
+  }).mouseout(function() {
+    $(this).addClass(color);
+  })
 
 
   $('#red').on('click', function() {
